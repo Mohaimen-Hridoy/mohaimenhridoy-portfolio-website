@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohaimen Hridoy - Computer Science & Engineering student at MIST | Backend Developer specializing in Node.js, Express, Prisma, and PostgreSQL">
+  <meta name="keywords" content="backend developer, portfolio, node.js, express, prisma, postgresql, MIST, software engineer">
+  <meta name="author" content="Mohaimen Hridoy">
+  <meta property="og:title" content="Mohaimen Hridoy - Backend Developer Portfolio">
+  <meta property="og:description" content="CSE student at MIST building secure, scalable backend systems with Node.js, Express, Prisma, and PostgreSQL.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Mohaimen Hridoy | Backend Developer</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Mohaimen Hridoy</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme"></button>
+      <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.825rem;">Contact Me</a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+  <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>CSE @ MIST &middot; Backend Developer</span>
+        </div>
+        <h1 class="hero-name">
+          Hey, I'm<br>
+          <span class="grad-text">Mohaimen Hridoy</span>
+        </h1>
+        <p class="hero-tagline">
+          Computer Science &amp; Engineering student passionate about backend development. I build secure, scalable APIs and database-driven systems with Node.js, Express, Prisma, and PostgreSQL.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-val">MIST</div>
+            <div class="hero-stat-label">CSE Student</div>
+          </div>
+          <div>
+            <div class="hero-stat-val">API</div>
+            <div class="hero-stat-label">Development</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img src="/profile.png" alt="Mohaimen Hridoy" class="avatar-photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-label">01 &mdash; About Me</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-title" style="margin-bottom:24px;">Focused on<br><span class="grad-text">backend engineering</span></h2>
+        <p>I'm a Computer Science &amp; Engineering student at the Military Institute of Science and Technology (MIST), with a strong focus on backend development and software engineering fundamentals.</p>
+        <p>I enjoy designing RESTful APIs, modeling relational databases, and building server-side applications that are secure, maintainable, and ready to scale.</p>
+        <p>Outside of coding, I'm into gaming, cricket, and football, and I enjoy watching movies and traveling whenever I get the chance.</p>
+        <div style="margin-top:24px;">
+          <p style="font-size:0.85rem;color:var(--text3);margin-bottom:12px;font-family:'DM Mono',monospace;">QUICK STACK</p>
+          <div class="skill-chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Tailwind</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">Prisma ORM</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Git</span>
+          </div>
+        </div>
+        <div class="about-links">
+          <a href="/resume.pdf" class="btn btn-primary" download>Download CV &rarr;</a>
+          <a href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+      <div class="about-cards reveal reveal-delay-2">
+        <div class="card about-card">
+          <div class="about-card-icon">API</div>
+          <div>
+            <h4>Backend Development</h4>
+            <p>Building RESTful APIs with JWT authentication, role-based access control, and Prisma ORM for type-safe database operations.</p>
+          </div>
+        </div>
+        <div class="card about-card">
+          <div class="about-card-icon">IT</div>
+          <div>
+            <h4>Industrial Training</h4>
+            <p>Completed industrial training with exposure to enterprise networking, system administration, billing systems, and digital service platforms.</p>
+          </div>
+        </div>
+        <div class="card about-card">
+          <div class="about-card-icon">GO</div>
+          <div>
+            <h4>Career Goal</h4>
+            <p>Aspiring Software Engineer specializing in backend development and distributed systems, with plans for higher studies abroad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-label reveal">02 &mdash; Projects</div>
+    <h2 class="section-title reveal">Featured <span class="grad-text">Work</span></h2>
+    <div class="projects-grid">
+
+      <div class="card project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">AUTH</div>
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+            <span class="featured-badge">Featured</span>
+            <div class="project-links">
+              <a href="https://dev-pulse-ashen-zeta.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Live Demo" aria-label="Open DevPulse live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="https://github.com/Mohaimen-Hridoy/devpulse" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub" aria-label="View DevPulse on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h3 class="project-title">Backend Authentication API</h3>
+        <p class="project-desc">Secure authentication system with JWT tokens, password hashing, and role-based authorization for multi-user applications.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express</span>
+          <span class="tech-tag">Prisma</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">JWT</span>
+        </div>
+        <a href="/project-detail.html?id=auth-api" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
+      </div>
+
+      <div class="card project-card reveal reveal-delay-1">
+        <div class="project-top">
+          <div class="project-icon">LAW</div>
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+            <span class="featured-badge">Featured</span>
+          </div>
+        </div>
+        <h3 class="project-title">Justice Tracker API</h3>
+        <p class="project-desc">RESTful API for managing petitioners, lawyers, and judges with structured data models and full CRUD operations.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express</span>
+          <span class="tech-tag">Prisma</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+        <a href="/project-detail.html?id=justice-tracker" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
+      </div>
+
+      <div class="card project-card reveal reveal-delay-2">
+        <div class="project-top">
+          <div class="project-icon">SHOP</div>
+        </div>
+        <h3 class="project-title">E-Commerce Backend</h3>
+        <p class="project-desc">Full backend API supporting user authentication, product catalog, order management, and payment status tracking.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Express</span>
+          <span class="tech-tag">Prisma</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+        <a href="/project-detail.html?id=ecommerce-backend" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">FTB</div>
+          <div class="project-links">
+            <a href="https://github.com/Mohaimen-Hridoy/football-ticket-booking" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub" aria-label="View Football Ticket Booking on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">Football Ticket Booking System</h3>
+        <p class="project-desc">Relational database design for match ticketing with user roles, booking management, payment status tracking, and constraint validation.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">ERD</span>
+        </div>
+        <a href="/project-detail.html?id=football-ticket-booking" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-label reveal">03 &mdash; Skills</div>
+    <h2 class="section-title reveal">Technical <span class="grad-text">Arsenal</span></h2>
+    <div class="skills-grid">
+
+      <div class="card skill-category reveal">
+        <div class="skill-cat-title">Frontend</div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></span>HTML</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""></span>CSS</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt=""></span>Tailwind CSS</span></div></div>
+      </div>
+
+      <div class="card skill-category reveal">
+        <div class="skill-cat-title">Languages</div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""></span>JavaScript</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt=""></span>TypeScript</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt=""></span>C++</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt=""></span>SQL</span></div></div>
+      </div>
+
+      <div class="card skill-category reveal reveal-delay-1">
+        <div class="skill-cat-title">Backend</div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt=""></span>Node.js</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt=""></span>Express.js</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/prisma/2D3748" alt=""></span>Prisma ORM</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/fastapi/009688" alt=""></span>REST API Design</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/jsonwebtokens/000000" alt=""></span>JWT Authentication</span></div></div>
+      </div>
+
+      <div class="card skill-category reveal reveal-delay-1">
+        <div class="skill-cat-title">Database</div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt=""></span>PostgreSQL</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt=""></span>MongoDB</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/diagramsdotnet/4479A1" alt=""></span>Database Design</span></div></div>
+      </div>
+
+      <div class="card skill-category reveal reveal-delay-2">
+        <div class="skill-cat-title">Tools</div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt=""></span>Git</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""></span>GitHub</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/postman/FF6C37" alt=""></span>Postman</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt=""></span>VS Code</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/prisma/2D3748" alt=""></span>Prisma Studio</span></div></div>
+      </div>
+
+      <div class="card skill-category reveal">
+        <div class="skill-cat-title">Currently Learning</div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt=""></span>Docker</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt=""></span>Next.js</span></div></div>
+        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/amazonwebservices/232F3E" alt=""></span>System Design</span></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-label reveal">04 &mdash; Journey</div>
+    <h2 class="section-title reveal">Experience &amp; <span class="grad-text">Education</span></h2>
+    <div class="timeline">
+      <div class="timeline-col reveal">
+        <h3>Experience</h3>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">Industrial Training</div>
+              <div class="timeline-title">Industrial Training</div>
+              <div class="timeline-org">ICT &amp; Enterprise Systems</div>
+              <div class="timeline-desc">Gained hands-on exposure to enterprise networking, system administration, billing systems, and digital service platforms.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">Ongoing</div>
+              <div class="timeline-title">Backend Development Projects</div>
+              <div class="timeline-org">Personal &amp; Academic Work</div>
+              <div class="timeline-desc">Building real-world backend applications with authentication, database design, and API development using the Node.js ecosystem.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-col reveal reveal-delay-1">
+        <h3>Education</h3>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">Present</div>
+              <div class="timeline-title">B.Sc. in Computer Science &amp; Engineering</div>
+              <div class="timeline-org">Military Institute of Science and Technology</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-label reveal">05 &mdash; Contact</div>
+    <h2 class="section-title reveal">Let's <span class="grad-text">Connect</span></h2>
+    <div class="contact-grid contact-grid-single">
+      <div class="contact-info reveal">
+        <p>I'm open to collaborations, internship opportunities, and conversations about backend development and software engineering. Whether you have a project idea or just want to connect &mdash; feel free to reach out.</p>
+        <div class="contact-links">
+          <a href="mailto:mohaimenhridoy@gmail.com" class="contact-link">
+            <div class="contact-link-icon">@</div>
+            <div>
+              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">Email</div>
+              <div style="font-size:0.8rem;">mohaimenhridoy@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/mohaimenhridoy" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            <div>
+              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">LinkedIn</div>
+              <div style="font-size:0.8rem;">linkedin.com/in/mohaimenhridoy</div>
+            </div>
+          </a>
+          <a href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-link-icon">GH</div>
+            <div>
+              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">GitHub</div>
+              <div style="font-size:0.8rem;">github.com/Mohaimen-Hridoy</div>
+            </div>
+          </a>
+          <a href="tel:+8801518946779" class="contact-link">
+            <div class="contact-link-icon">&#9742;</div>
+            <div>
+              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">Phone</div>
+              <div style="font-size:0.8rem;">+880 1518-946779</div>
+            </div>
+          </a>
+          <a href="https://wa.me/8801710196083" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-link-icon">WA</div>
+            <div>
+              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">WhatsApp</div>
+              <div style="font-size:0.8rem;">+880 1710-196083</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-text">
+        &copy; <span id="year"></span> <span style="color:var(--accent-1);">Mohaimen Hridoy</span>. Built with care.
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-text mono" style="font-size:0.75rem;">
+        v1.0.0
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
