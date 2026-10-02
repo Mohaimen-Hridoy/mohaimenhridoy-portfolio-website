@@ -3,412 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mohaimen Hridoy - Computer Science & Engineering student at MIST | Backend Developer specializing in Node.js, Express, Prisma, and PostgreSQL">
-  <meta name="keywords" content="backend developer, portfolio, node.js, express, prisma, postgresql, MIST, software engineer">
+  <meta name="description" content="Mohaimen Hridoy — CSE student at MIST and Full-Stack Developer building modern web applications, APIs and real-world products.">
   <meta name="author" content="Mohaimen Hridoy">
-  <meta property="og:title" content="Mohaimen Hridoy - Backend Developer Portfolio">
-  <meta property="og:description" content="CSE student at MIST building secure, scalable backend systems with Node.js, Express, Prisma, and PostgreSQL.">
+  <meta property="og:title" content="Mohaimen Hridoy | Full-Stack Developer">
+  <meta property="og:description" content="Portfolio of Mohaimen Hridoy — CSE student at MIST and Full-Stack Developer.">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Mohaimen Hridoy | Backend Developer</title>
+  <meta name="theme-color" content="#070b14">
+  <title>Mohaimen Hridoy | Full-Stack Developer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="#home" class="nav-logo">Mohaimen Hridoy</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme"></button>
-      <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.825rem;">Contact Me</a>
-      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#about" onclick="closeMobileMenu()">About</a>
-  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
-  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
-  <a href="#experience" onclick="closeMobileMenu()">Experience</a>
-  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
-</div>
-
-<section class="hero" id="home">
-  <div class="hero-bg">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-  </div>
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          <span>CSE @ MIST &middot; Backend Developer</span>
-        </div>
-        <h1 class="hero-name">
-          Hey, I'm<br>
-          <span class="grad-text">Mohaimen Hridoy</span>
-        </h1>
-        <p class="hero-tagline">
-          Computer Science &amp; Engineering student passionate about backend development. I build secure, scalable APIs and database-driven systems with Node.js, Express, Prisma, and PostgreSQL.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">
-            <span>View Projects</span>
-            <span>&rarr;</span>
-          </a>
-          <a href="#contact" class="btn btn-outline">Get in Touch</a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-val">MIST</div>
-            <div class="hero-stat-label">CSE Student</div>
-          </div>
-          <div>
-            <div class="hero-stat-val">API</div>
-            <div class="hero-stat-label">Development</div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="avatar-ring">
-          <div class="avatar-inner">
-            <img src="/profile.png" alt="Mohaimen Hridoy" class="avatar-photo">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="container">
-    <div class="section-label">01 &mdash; About Me</div>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <h2 class="section-title" style="margin-bottom:24px;">Focused on<br><span class="grad-text">backend engineering</span></h2>
-        <p>I'm a Computer Science &amp; Engineering student at the Military Institute of Science and Technology (MIST), with a strong focus on backend development and software engineering fundamentals.</p>
-        <p>I enjoy designing RESTful APIs, modeling relational databases, and building server-side applications that are secure, maintainable, and ready to scale.</p>
-        <p>Outside of coding, I'm into gaming, cricket, and football, and I enjoy watching movies and traveling whenever I get the chance.</p>
-        <div style="margin-top:24px;">
-          <p style="font-size:0.85rem;color:var(--text3);margin-bottom:12px;font-family:'DM Mono',monospace;">QUICK STACK</p>
-          <div class="skill-chips">
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">Tailwind</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">Express.js</span>
-            <span class="chip">Prisma ORM</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">Git</span>
-          </div>
-        </div>
-        <div class="about-links">
-          <a href="/resume.pdf" class="btn btn-primary" download>Download CV &rarr;</a>
-          <a href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
-        </div>
-      </div>
-      <div class="about-cards reveal reveal-delay-2">
-        <div class="card about-card">
-          <div class="about-card-icon">API</div>
-          <div>
-            <h4>Backend Development</h4>
-            <p>Building RESTful APIs with JWT authentication, role-based access control, and Prisma ORM for type-safe database operations.</p>
-          </div>
-        </div>
-        <div class="card about-card">
-          <div class="about-card-icon">IT</div>
-          <div>
-            <h4>Industrial Training</h4>
-            <p>Completed industrial training with exposure to enterprise networking, system administration, billing systems, and digital service platforms.</p>
-          </div>
-        </div>
-        <div class="card about-card">
-          <div class="about-card-icon">GO</div>
-          <div>
-            <h4>Career Goal</h4>
-            <p>Aspiring Software Engineer specializing in backend development and distributed systems, with plans for higher studies abroad.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="projects" style="background:var(--bg2);">
-  <div class="container">
-    <div class="section-label reveal">02 &mdash; Projects</div>
-    <h2 class="section-title reveal">Featured <span class="grad-text">Work</span></h2>
-    <div class="projects-grid">
-
-      <div class="card project-card reveal">
-        <div class="project-top">
-          <div class="project-icon">AUTH</div>
-          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
-            <span class="featured-badge">Featured</span>
-            <div class="project-links">
-              <a href="https://dev-pulse-ashen-zeta.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Live Demo" aria-label="Open DevPulse live demo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-              </a>
-              <a href="https://github.com/Mohaimen-Hridoy/devpulse" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub" aria-label="View DevPulse on GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <h3 class="project-title">Backend Authentication API</h3>
-        <p class="project-desc">Secure authentication system with JWT tokens, password hashing, and role-based authorization for multi-user applications.</p>
-        <div class="tech-stack">
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Express</span>
-          <span class="tech-tag">Prisma</span>
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">JWT</span>
-        </div>
-        <a href="/project-detail.html?id=auth-api" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
-      </div>
-
-      <div class="card project-card reveal reveal-delay-1">
-        <div class="project-top">
-          <div class="project-icon">LAW</div>
-          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
-            <span class="featured-badge">Featured</span>
-          </div>
-        </div>
-        <h3 class="project-title">Justice Tracker API</h3>
-        <p class="project-desc">RESTful API for managing petitioners, lawyers, and judges with structured data models and full CRUD operations.</p>
-        <div class="tech-stack">
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Express</span>
-          <span class="tech-tag">Prisma</span>
-          <span class="tech-tag">PostgreSQL</span>
-        </div>
-        <a href="/project-detail.html?id=justice-tracker" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
-      </div>
-
-      <div class="card project-card reveal reveal-delay-2">
-        <div class="project-top">
-          <div class="project-icon">SHOP</div>
-        </div>
-        <h3 class="project-title">E-Commerce Backend</h3>
-        <p class="project-desc">Full backend API supporting user authentication, product catalog, order management, and payment status tracking.</p>
-        <div class="tech-stack">
-          <span class="tech-tag">Express</span>
-          <span class="tech-tag">Prisma</span>
-          <span class="tech-tag">PostgreSQL</span>
-        </div>
-        <a href="/project-detail.html?id=ecommerce-backend" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
-      </div>
-
-      <div class="card project-card reveal">
-        <div class="project-top">
-          <div class="project-icon">FTB</div>
-          <div class="project-links">
-            <a href="https://github.com/Mohaimen-Hridoy/football-ticket-booking" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub" aria-label="View Football Ticket Booking on GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-        </div>
-        <h3 class="project-title">Football Ticket Booking System</h3>
-        <p class="project-desc">Relational database design for match ticketing with user roles, booking management, payment status tracking, and constraint validation.</p>
-        <div class="tech-stack">
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">SQL</span>
-          <span class="tech-tag">ERD</span>
-        </div>
-        <a href="/project-detail.html?id=football-ticket-booking" class="btn btn-outline project-detail-btn">View Details &rarr;</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section" id="skills">
-  <div class="container">
-    <div class="section-label reveal">03 &mdash; Skills</div>
-    <h2 class="section-title reveal">Technical <span class="grad-text">Arsenal</span></h2>
-    <div class="skills-grid">
-
-      <div class="card skill-category reveal">
-        <div class="skill-cat-title">Frontend</div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></span>HTML</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""></span>CSS</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt=""></span>Tailwind CSS</span></div></div>
-      </div>
-
-      <div class="card skill-category reveal">
-        <div class="skill-cat-title">Languages</div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""></span>JavaScript</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt=""></span>TypeScript</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt=""></span>C++</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt=""></span>SQL</span></div></div>
-      </div>
-
-      <div class="card skill-category reveal reveal-delay-1">
-        <div class="skill-cat-title">Backend</div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt=""></span>Node.js</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt=""></span>Express.js</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/prisma/2D3748" alt=""></span>Prisma ORM</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/fastapi/009688" alt=""></span>REST API Design</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/jsonwebtokens/000000" alt=""></span>JWT Authentication</span></div></div>
-      </div>
-
-      <div class="card skill-category reveal reveal-delay-1">
-        <div class="skill-cat-title">Database</div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt=""></span>PostgreSQL</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt=""></span>MongoDB</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/diagramsdotnet/4479A1" alt=""></span>Database Design</span></div></div>
-      </div>
-
-      <div class="card skill-category reveal reveal-delay-2">
-        <div class="skill-cat-title">Tools</div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt=""></span>Git</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""></span>GitHub</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/postman/FF6C37" alt=""></span>Postman</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt=""></span>VS Code</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/prisma/2D3748" alt=""></span>Prisma Studio</span></div></div>
-      </div>
-
-      <div class="card skill-category reveal">
-        <div class="skill-cat-title">Currently Learning</div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt=""></span>Docker</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt=""></span>Next.js</span></div></div>
-        <div class="skill-item"><div class="skill-row"><span class="skill-name"><span class="skill-logo"><img src="https://cdn.simpleicons.org/amazonwebservices/232F3E" alt=""></span>System Design</span></div></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section" id="experience" style="background:var(--bg2);">
-  <div class="container">
-    <div class="section-label reveal">04 &mdash; Journey</div>
-    <h2 class="section-title reveal">Experience &amp; <span class="grad-text">Education</span></h2>
-    <div class="timeline">
-      <div class="timeline-col reveal">
-        <h3>Experience</h3>
-        <div class="timeline-items">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">Industrial Training</div>
-              <div class="timeline-title">Industrial Training</div>
-              <div class="timeline-org">ICT &amp; Enterprise Systems</div>
-              <div class="timeline-desc">Gained hands-on exposure to enterprise networking, system administration, billing systems, and digital service platforms.</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">Ongoing</div>
-              <div class="timeline-title">Backend Development Projects</div>
-              <div class="timeline-org">Personal &amp; Academic Work</div>
-              <div class="timeline-desc">Building real-world backend applications with authentication, database design, and API development using the Node.js ecosystem.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-col reveal reveal-delay-1">
-        <h3>Education</h3>
-        <div class="timeline-items">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">Present</div>
-              <div class="timeline-title">B.Sc. in Computer Science &amp; Engineering</div>
-              <div class="timeline-org">Military Institute of Science and Technology</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <div class="container">
-    <div class="section-label reveal">05 &mdash; Contact</div>
-    <h2 class="section-title reveal">Let's <span class="grad-text">Connect</span></h2>
-    <div class="contact-grid contact-grid-single">
-      <div class="contact-info reveal">
-        <p>I'm open to collaborations, internship opportunities, and conversations about backend development and software engineering. Whether you have a project idea or just want to connect &mdash; feel free to reach out.</p>
-        <div class="contact-links">
-          <a href="mailto:mohaimenhridoy@gmail.com" class="contact-link">
-            <div class="contact-link-icon">@</div>
-            <div>
-              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">Email</div>
-              <div style="font-size:0.8rem;">mohaimenhridoy@gmail.com</div>
-            </div>
-          </a>
-          <a href="https://linkedin.com/in/mohaimenhridoy" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="contact-link-icon">in</div>
-            <div>
-              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">LinkedIn</div>
-              <div style="font-size:0.8rem;">linkedin.com/in/mohaimenhridoy</div>
-            </div>
-          </a>
-          <a href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="contact-link-icon">GH</div>
-            <div>
-              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">GitHub</div>
-              <div style="font-size:0.8rem;">github.com/Mohaimen-Hridoy</div>
-            </div>
-          </a>
-          <a href="tel:+8801518946779" class="contact-link">
-            <div class="contact-link-icon">&#9742;</div>
-            <div>
-              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">Phone</div>
-              <div style="font-size:0.8rem;">+880 1518-946779</div>
-            </div>
-          </a>
-          <a href="https://wa.me/8801710196083" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="contact-link-icon">WA</div>
-            <div>
-              <div style="font-weight:600;font-size:0.875rem;color:var(--text);">WhatsApp</div>
-              <div style="font-size:0.8rem;">+880 1710-196083</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-text">
-        &copy; <span id="year"></span> <span style="color:var(--accent-1);">Mohaimen Hridoy</span>. Built with care.
-      </div>
-      <div class="footer-links">
-        <a href="#home">Home</a>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#home"><span>MH</span> Mohaimen Hridoy</a>
+      <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#stack">Stack</a>
         <a href="#projects">Projects</a>
+        <a href="#activity">Activity</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="footer-text mono" style="font-size:0.75rem;">
-        v1.0.0
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+        <a class="nav-cta" href="/resume.pdf" download>Resume ↗</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
       </div>
     </div>
-  </div>
-</footer>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about">About</a><a href="#stack">Stack</a><a href="#projects">Projects</a><a href="#activity">Activity</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-<script type="module" src="/src/scripts/main.js"></script>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="status-pill"><span></span> Open to Software Engineering opportunities</div>
+          <p class="eyebrow">CSE @ MIST · DHAKA, BANGLADESH</p>
+          <h1>Building products<br>that <em>feel alive.</em></h1>
+          <p class="hero-text">I'm <strong>Mohaimen Hridoy</strong>, a Computer Science &amp; Engineering student and Full-Stack Developer. I turn ideas into polished web applications, APIs and practical digital products.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore my work <span>↓</span></a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/mohaimenhridoy/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="btn btn-ghost" href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <div class="hero-meta">
+            <div><b>Full-Stack</b><span>Primary focus</span></div>
+            <div><b>React · Next.js</b><span>Frontend</span></div>
+            <div><b>Node · Prisma</b><span>Backend</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-shell">
+            <div class="visual-top"><span></span><span></span><span></span><code>~/mohaimen/portfolio</code></div>
+            <div class="visual-screen">
+              <div class="scanline"></div>
+              <div class="avatar-wrap">
+                <div class="avatar-halo"></div>
+                <img src="/profile.png" alt="Mohaimen Hridoy" class="hero-avatar">
+              </div>
+              <div class="code-card">
+                <span class="code-muted">const</span> developer = {<br>
+                &nbsp;&nbsp;name: <span class="code-green">"Mohaimen Hridoy"</span>,<br>
+                &nbsp;&nbsp;role: <span class="code-green">"Full-Stack Developer"</span>,<br>
+                &nbsp;&nbsp;focus: <span class="code-green">"building useful things"</span><br>
+                };
+              </div>
+              <div class="floating-tag tag-one">⚡ TypeScript</div>
+              <div class="floating-tag tag-two">◈ Next.js</div>
+              <div class="floating-tag tag-three">⌘ Node.js</div>
+            </div>
+          </div>
+          <div class="hero-caption"><span class="pulse-dot"></span> currently learning · system design + AI engineering</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="activity">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">01 · DEVELOPER DASHBOARD</p><h2>More than a portfolio.</h2></div>
+          <a class="text-link" href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener">View GitHub ↗</a>
+        </div>
+        <div class="dashboard-grid">
+          <div class="dash-card profile-card">
+            <div class="dash-profile">
+              <img src="https://avatars.githubusercontent.com/u/162082582?v=4" alt="Mohaimen Hridoy">
+              <div><b>Mohaimen-Hridoy</b><span>@github</span></div>
+            </div>
+            <div class="mini-stats">
+              <div><b>Full-Stack</b><span>Developer</span></div>
+              <div><b>MIST</b><span>CSE</span></div>
+              <div><b>2027</b><span>Target</span></div>
+            </div>
+            <div class="dash-links">
+              <a href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+              <a href="https://www.linkedin.com/in/mohaimenhridoy/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+              <a href="mailto:mohaimenhridoy@gmail.com">Email <span>↗</span></a>
+            </div>
+          </div>
+
+          <div class="dash-card stats-card">
+            <div class="card-label">GitHub snapshot</div>
+            <div class="stat-row">
+              <img src="https://github-readme-stats.vercel.app/api?username=Mohaimen-Hridoy&show_icons=true&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=9aa6bb&icon_color=7c9cff&rank_icon=github&hide_title=true" alt="GitHub statistics">
+            </div>
+            <div class="stat-row"><img src="https://streak-stats.demolab.com?user=Mohaimen-Hridoy&hide_border=true&background=00000000&ring=7c9cff&fire=ff8a65&currStreakLabel=ffffff&sideLabels=9aa6bb&currStreakNum=ffffff&sideNums=ffffff&dates=6f7b91" alt="GitHub streak"></div>
+          </div>
+
+          <div class="dash-card activity-card">
+            <div class="card-label">Contribution graph</div>
+            <img class="activity-img" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohaimen-Hridoy&bg_color=00000000&color=9aa6bb&line=7c9cff&point=ffffff&area=true&hide_border=true" alt="GitHub contribution activity graph">
+          </div>
+
+          <div class="dash-card snake-card">
+            <div class="card-label">Contribution snake</div>
+            <img src="https://raw.githubusercontent.com/Mohaimen-Hridoy/Mohaimen-Hridoy/output/github-contribution-grid-snake-dark.svg" alt="GitHub contribution snake">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">02 · ABOUT</p>
+          <h2>I like the messy part:<br><em>turning ideas into systems.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>I'm a CSE student at <strong>MIST</strong> focused on becoming a strong software engineer. My sweet spot is full-stack development — building clean interfaces on top of dependable APIs and well-designed databases.</p>
+          <p>I've worked on rental platforms, service marketplaces, smart-city apps, developer products and database-driven systems. I care about architecture, UX, authentication, deployment and the tiny details that make a product actually usable.</p>
+          <div class="about-facts">
+            <div><span>01</span><b>Build</b><small>Real-world products</small></div>
+            <div><span>02</span><b>Learn</b><small>Modern engineering</small></div>
+            <div><span>03</span><b>Ship</b><small>Deploy &amp; iterate</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack">
+      <div class="container">
+        <p class="eyebrow">03 · TOOLBOX</p>
+        <div class="section-head compact"><h2>The stack I reach for.</h2><span class="mono-note">always evolving ↗</span></div>
+        <div class="stack-grid">
+          <div class="stack-group"><span>Frontend</span><div><b>React</b><b>Next.js</b><b>TypeScript</b><b>JavaScript</b><b>Tailwind CSS</b></div></div>
+          <div class="stack-group"><span>Backend</span><div><b>Node.js</b><b>Express</b><b>NestJS</b><b>REST APIs</b><b>Prisma</b></div></div>
+          <div class="stack-group"><span>Data</span><div><b>PostgreSQL</b><b>MongoDB</b><b>Neon</b><b>Firebase</b></div></div>
+          <div class="stack-group"><span>Tools &amp; Cloud</span><div><b>Git</b><b>GitHub</b><b>Vercel</b><b>Render</b><b>Cloudinary</b><b>Stripe</b></div></div>
+          <div class="stack-group learning"><span>Currently learning</span><div><b>Docker</b><b>System Design</b><b>AI Engineering</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">04 · SELECTED WORK</p><h2>Things I've built.</h2></div>
+          <span class="mono-note">problem → product → shipped</span>
+        </div>
+        <div class="projects">
+          <article class="project featured">
+            <div class="project-index">01</div><div class="project-content">
+              <p class="project-kicker">PROPERTY · FULL-STACK</p><h3>RentNest</h3>
+              <p>A property and roommate platform designed around real rental workflows, user roles, media uploads and production deployment.</p>
+              <div class="tags"><span>Next.js</span><span>Node.js</span><span>Prisma</span><span>PostgreSQL</span><span>Cloudinary</span></div>
+              <div class="project-actions"><a href="https://github.com/Mohaimen-Hridoy/RentNest-frontend" target="_blank" rel="noopener">Frontend ↗</a><a href="https://github.com/Mohaimen-Hridoy/RentNest-Backend" target="_blank" rel="noopener">Backend ↗</a></div>
+            </div><div class="project-mark">RN</div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">02</div><div class="project-content">
+              <p class="project-kicker">SERVICE MARKETPLACE</p><h3>FixMate</h3>
+              <p>A service marketplace with modern authentication, role-aware flows and a full-stack architecture built for maintainability.</p>
+              <div class="tags"><span>Next.js</span><span>React</span><span>Express</span><span>Prisma</span><span>Neon</span></div>
+              <div class="project-actions"><a href="https://github.com/Mohaimen-Hridoy/FixMate-frontend" target="_blank" rel="noopener">Frontend ↗</a><a href="https://github.com/Mohaimen-Hridoy/FixMate-backend" target="_blank" rel="noopener">Backend ↗</a></div>
+            </div><div class="project-mark">FM</div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">03</div><div class="project-content">
+              <p class="project-kicker">RENTAL PLATFORM</p><h3>GearUp</h3>
+              <p>A rental platform with customer/provider/admin roles, media handling and payment integration.</p>
+              <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>Stripe</span><span>Cloudinary</span></div>
+              <div class="project-actions"><a href="https://github.com/Mohaimen-Hridoy/GearUp-Frontend" target="_blank" rel="noopener">Frontend ↗</a><a href="https://github.com/Mohaimen-Hridoy/GearUp-Backend" target="_blank" rel="noopener">Backend ↗</a></div>
+            </div><div class="project-mark">GU</div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">04</div><div class="project-content">
+              <p class="project-kicker">SMART CITY · MOBILE</p><h3>Jolshiri Smart City</h3>
+              <p>A Flutter-based smart-city app with a dedicated backend for notices, rentals, authentication and city services.</p>
+              <div class="tags"><span>Flutter</span><span>Dart</span><span>Node.js</span><span>Prisma</span><span>Firebase</span></div>
+              <div class="project-actions"><a href="https://github.com/Mohaimen-Hridoy/Jolshiri-Smart-City-App" target="_blank" rel="noopener">App ↗</a><a href="https://github.com/Mohaimen-Hridoy/Jolshiri-backend" target="_blank" rel="noopener">Backend ↗</a></div>
+            </div><div class="project-mark">JS</div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">05</div><div class="project-content">
+              <p class="project-kicker">DEVELOPER PRODUCT</p><h3>DevPulse</h3>
+              <p>A developer-focused product exploring a modern TypeScript stack and product-oriented frontend experience.</p>
+              <div class="tags"><span>TypeScript</span><span>React</span><span>Vite</span></div>
+              <div class="project-actions"><a href="https://github.com/Mohaimen-Hridoy/devpulse" target="_blank" rel="noopener">GitHub ↗</a><a href="https://dev-pulse-ashen-zeta.vercel.app/" target="_blank" rel="noopener">Live ↗</a></div>
+            </div><div class="project-mark">DP</div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">06</div><div class="project-content">
+              <p class="project-kicker">WEB · API</p><h3>Movie Explorer</h3>
+              <p>A responsive movie discovery project focused on consuming APIs, presenting content clearly and keeping the UI fast.</p>
+              <div class="tags"><span>React</span><span>Vite</span><span>JavaScript</span></div>
+              <div class="project-actions"><a href="https://github.com/Mohaimen-Hridoy/Movie-Explorer" target="_blank" rel="noopener">GitHub ↗</a></div>
+            </div><div class="project-mark">ME</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey">
+      <div class="container">
+        <p class="eyebrow">05 · JOURNEY</p>
+        <div class="journey-grid">
+          <div><h2>From learning syntax<br>to <em>shipping systems.</em></h2><p class="journey-intro">A work-in-progress timeline — because software engineering is a journey, not a finished badge collection.</p></div>
+          <div class="timeline">
+            <div class="timeline-item"><span>2023</span><div><b>Started CSE at MIST</b><small>Software engineering foundations, databases, networking and systems.</small></div></div>
+            <div class="timeline-item"><span>2024–25</span><div><b>Full-stack foundations</b><small>React, Node.js, Express, SQL, Git and real project work.</small></div></div>
+            <div class="timeline-item"><span>2026</span><div><b>Product-focused builds</b><small>RentNest, FixMate, GearUp, Jolshiri and deeper backend work.</small></div></div>
+            <div class="timeline-item active"><span>NOW</span><div><b>Preparing to ship professionally</b><small>Deepening Next.js, TypeScript, system design and AI-assisted engineering.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-box">
+        <div><p class="eyebrow">06 · LET'S TALK</p><h2>Have a product idea,<br>role or interesting problem?</h2><p>I'm always interested in good engineering problems and opportunities to build useful software.</p></div>
+        <div class="contact-actions"><a class="btn btn-primary" href="mailto:mohaimenhridoy@gmail.com">Send me an email ↗</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/mohaimenhridoy/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><span>© 2026 Mohaimen Hridoy</span><span>Built with curiosity · shipped with ☕</span><div><a href="https://github.com/Mohaimen-Hridoy" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/mohaimenhridoy/" target="_blank" rel="noopener">LinkedIn</a></div></div></footer>
+  <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>
